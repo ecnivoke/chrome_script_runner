@@ -27,7 +27,7 @@ saveBtn.onclick = ()=>{
   let values = document.getElementsByTagName('textarea');
 
   for(let i = 0; i < keys.length; i++){
-    if(keys[i].value != '')
+    if(keys[i].value != '' && values[i].value != '')
       newScripts.push({[keys[i].value]:values[i].value});
   }
 
